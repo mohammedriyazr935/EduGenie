@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang+"en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width,initial-scale=1.0">
+    <title>EduGenie-LearningAsssistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">EduGenie</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+                <a href="#about">About</a>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <p class="tagline">AI POWERED LEARNING</p>
+                <h1>Learn Smarter with EduGenie</h1>
+                <p class="description">your personal learning assistant for understanding concepts,creating notes,generating quizzes and planning your studies</p>
+                <button onclick="startLearning()">Start Learning</button>
+            </div>
+        </section>
+        <section id="doubt-solver" class="doubt-solver">
+
+    <h2>Ask EduGenie</h2>
+
+    <p>Enter your question and get an easy explanation.</p>
+
+    <textarea
+        id="questionInput"
+        placeholder="Type your question here..."
+        rows="5">
+    </textarea>
+
+    <br><br>
+
+    <button onclick="solveDoubt()">
+        Ask EduGenie
+    </button>
+
+    <div id="answerBox">
+        Your answer will appear here.
+    </div>
+
+</section>
+<section class="notes-section">
+
+    <h2>AI Notes & Summarizer</h2>
+
+    <p>Enter your study content and create simple notes.</p>
+
+    <textarea
+        id="notesInput"
+        placeholder="Paste your study content here..."
+        rows="6">
+    </textarea>
+
+    <br><br>
+
+    <button onclick="summarizeNotes()">
+        Summarize Notes
+    </button>
+
+    <div id="summaryBox">
+        Your summary will appear here.
+    </div>
+
+</section>
+<section class="quiz-section">
+
+    <h2>AI Quiz Generator</h2>
+
+    <p>Enter a topic and generate a quick quiz.</p>
+
+    <input
+        type="text"
+        id="quizTopic"
+        placeholder="Enter a topic..."
+    >
+
+    <br><br>
+
+    <button onclick="generateQuiz()">
+        Generate Quiz
+    </button>
+
+    <div id="quizBox">
+        Your quiz will appear here.
+    </div>
+
+</section>
+<section class="study-planner">
+    <h2>AI Study Planner</h2>
+    <p>Create your daily study plan.</p>
+
+    <input type="text" id="studySubject" placeholder="Enter subject name">
+
+    <input type="number" id="studyHours" placeholder="Study hours" min="1" max="12">
+
+    <button onclick="createStudyPlan()">Create Study Plan</button>
+
+    <div id="studyPlanBox">Your study plan will appear here.</div>
+</section>
+<section id="features"class="feature">
+            <h2>What can EduGenie do?</h2>
+            <div class="feature-container">
+                <div class="feature-card">
+                    <h3>AI Doubt Solver</h3>
+                    <p>Ask questions and get easy-to-understand expalnations</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Notes&Summary</h3>
+                    <p>Convert long study material into simple notes.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>AI Quiz Generator</h3>
+                    <p>Create practice questions and test your knowledge.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Study Planner</h3>
+                    <p>Organise your subjects and study schedule.</p>
+                </div>
+            </div>
+        </section>
+        <section id ="about"class="about">
+            <h2>About EduGenie</h2>
+            <p>EduGenie is a student-friendly learning assistant designed to support personalised learning with AI-powered educational features.</p>
+        </section>
+    </main>
+    <footer>
+        <p>2026 EduGenie| Learning Made Simple</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

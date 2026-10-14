@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7ff;
+    color: #20243a;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #4b4ded;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 25px;
+    font-weight: 500;
+}
+
+.hero {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.tagline {
+    color: #4b4ded;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+button {
+    border: none;
+    padding: 14px 28px;
+    border-radius: 8px;
+    background: #4b4ded;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+.features {
+    padding: 60px 8%;
+    background: white;
+    text-align: center;
+}
+
+.features h2,
+.about h2 {
+    font-size: 32px;
+    margin-bottom: 35px;
+}
+
+.feature-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.feature-card {
+    padding: 25px;
+    background: #f5f7ff;
+    border-radius: 15px;
+    min-height: 170px;
+}
+
+.feature-card h3 {
+    margin-bottom: 15px;
+    color: #4b4ded;
+}
+
+.feature-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.about {
+    padding: 70px 15%;
+    text-align: center;
+}
+
+.about p {
+    color: #666;
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #20243a;
+    color: white;
+}
+
+@media (max-width: 800px) {
+    .feature-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+}
+
+@media (max-width: 500px) {
+    nav {
+        display: none;
+    }
+
+    .feature-container {
+        grid-template-columns: 1fr;
+    }
+}
+/* EduGenie Modern Design */
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f5f0ff, #ffffff);
+    color: #292044;
+    line-height: 1.6;
+}
+
+header {
+    background: #ffffff;
+    padding: 20px 8%;
+    box-shadow: 0 3px 15px rgba(80, 50, 130, 0.12);
+}
+
+.logo {
+    color: #7048c6;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+section {
+    margin: 30px auto;
+    padding: 30px;
+    max-width: 1000px;
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 6px 20px rgba(80, 50, 130, 0.10);
+}
+
+h1, h2, h3 {
+    color: #633bb5;
+}
+
+button {
+    background: linear-gradient(135deg, #805ad5, #633bb5);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(99, 59, 181, 0.25);
+}
+
+input, textarea {
+    width: 100%;
+    padding: 13px;
+    margin-top: 10px;
+    border: 1px solid #d8ccef;
+    border-radius: 10px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+input:focus, textarea:focus {
+    outline: 2px solid #a78bfa;
+    border-color: #805ad5;
+}
+
+#answerBox, #summaryBox, #quizBox, #studyPlanBox {
+    margin-top: 20px;
+    padding: 18px;
+    background: #f5f0ff;
+    border-left: 5px solid #805ad5;
+    border-radius: 10px;
+    white-space: pre-wrap;
+    min-height: 25px;
+}
+
+.feature {
+    gap: 20px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 600px) {
+    section {
+        margin: 16px;
+        padding: 20px;
+    }
+
+    header {
+        padding: 16px;
+    }
+}
